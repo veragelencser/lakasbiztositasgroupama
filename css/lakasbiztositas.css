@@ -1,0 +1,623 @@
+/* groupama lakásbiztosítási forms */
+
+/* fonts */
+
+@font-face {
+    font-family: FrutigerCE-Regular;
+    src: url(../fonts/FrutigerCE-Regular.otf);
+}
+
+@font-face {
+    font-family: FrutigerCE-Bold;
+    src: url(../fonts/FrutigerCE-Bold.otf);
+}
+
+@font-face {
+    font-family: FrutigerCE-BlackItalic;
+    src: url(../fonts/FrutigerCE-BlackItalic.otf);
+}
+
+/* clear class */
+
+.clear{
+  clear: both;
+}
+
+
+body {
+ /* font-family: ; */
+  overflow-x: hidden; }
+
+/* nav css */
+
+nav{
+  background:#e5b900;
+  width:1440px;
+  height:40px;
+  width: 1440px;
+  margin:auto;
+}
+
+/* nav links to right */
+
+nav ul.nav{
+  padding-left: 65%;
+}
+
+/* nav-item to vertical centre */
+
+.nav-link {
+    padding: 0.75em 2em;
+}
+
+nav ul li a{
+  font-family:FrutigerCE-Regular;
+  font-size:13px;
+  color:#ffffff;
+  text-align:center;
+  margin-right: 17px;
+}
+
+nav ul li a:focus, nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* tabs section */
+
+.tabs{
+  background:#ffffff;
+  box-shadow:0 2px 4px 0 rgba(101,101,101,0.46);
+  min-width: 1440px;
+  width:100%;
+  height:82px;
+}
+
+.tabs ul{
+  margin: 17px 174px 0 0;
+  padding-left: 0;
+  display: inline-block;
+  float:right;
+}
+
+.tabs ul li{
+  list-style: none;
+  float: left;
+  margin-right: 32px;
+}
+
+.tabs ul li div{
+  display: inline-block;
+  vertical-align: middle;
+  background:#e0e0e0;
+  border:8px solid #ffffff;
+  width:48px;
+  height:48px;
+  border-radius:100%;
+}
+
+.tabs ul li div p{
+  vertical-align: middle;
+  font-family:FrutigerCE-Bold;
+  font-size:15px;
+  color:rgba(93,89,82,0.60);
+  text-align: center;
+  line-height: 2.2;
+  margin-bottom: 0;
+}
+
+.tabs ul li span{
+  font-family:FrutigerCE-Bold;
+  font-size:12px;
+  text-align:center;
+  color:rgba(75,71,65,0.60);
+}
+
+/* selected class in .tabs ul li */
+
+.tabs ul li.selected p{
+  color: #1b7577;
+}
+
+/* active class in .tabs ul li */
+
+.tabs ul li.active p{
+  color:#ffffff;
+}
+
+.tabs ul li.active div{
+  background: #1b7577;
+}
+
+/* active span, selected span in .tabs ul li */
+
+.tabs ul li.selected span, .tabs ul li.active span{
+  color:#4b4742;
+}
+
+/* section containers */
+
+.containers{
+  width: 1440px;
+  padding: 19px 120px;
+  margin:auto;
+}
+
+/* container-right */
+.container-right{
+  float: right;
+  min-width: 941px;
+  background:#f7f7f7;
+  padding:27px 31px;
+}
+
+/* címsorok anchorozva */
+
+.container-right a, .container-right a:hover, .container-right a:focus{
+  text-decoration: none;
+}
+
+.container-right a h4{
+  font-family:FrutigerCE-Bold;
+  font-size:22px;
+  color:#333333;
+  text-align:left;
+  margin-top:58px;
+  margin-bottom: 40px;
+}
+
+.container-right a h4:nth-child(1){
+  margin-top: 0;
+}
+
+
+/* radiobuttons and labels */
+
+.container-right form div.form-group:nth-child(1){
+  margin-bottom: 37px;
+}
+
+.container-right form div.form-group p{
+  font-family:FrutigerCE-Bold;
+  font-size:15px;
+  color:#333333;
+  text-align:left;
+  margin-bottom: 13px;
+}
+
+.container-right form div.form-group label.form-check-label{
+  min-width: 140px;
+  display: inline-block;
+  background:#e1e0e1;
+  height:45px;
+  padding:8px;
+  border-radius:3px;
+  margin-right: 8px;
+}
+
+.container-right form div.form-group label.form-check-label.big-label{
+  min-width: 180px;
+}
+
+.container-right form div.form-group label.form-check-label span{
+  font-family:FrutigerCE-Bold;
+  font-size:15px;
+  color:#231f20;
+  text-align:left;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+/* radiobutton label active */
+
+.container-right form div.form-group label.form-check-label.active{
+  background:#1b7577;
+}
+
+.container-right form div.form-group label.form-check-label.active span{
+  color:#ffffff;
+}
+
+/* radiobutton */
+
+.container-right form div.form-group label.form-check-label input[type=radio]{
+  display: none;
+}
+
+.radiobuttonForReal{
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  background-image: url("../imgs/24CC74B4-ECCB-4574-8A4B-D82690823EF0@1x.png");
+  margin-left: 2px;
+}
+
+.radiobuttonForReal img{
+  display: none;
+  margin:5px;
+}
+
+/* radiobutton active */
+
+label.form-check-label.active .radiobuttonForReal{
+  background-image: url("../imgs/28BEE876-A313-4C23-857A-A483B0F4317B@1x.png");
+}
+
+label.form-check-label.active .radiobuttonForReal img{
+  display: block;
+}
+
+
+/* text-inputs */
+
+.container-right form div.form-group.text-inputs div{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* label */
+.container-right form div.form-group.text-inputs label{
+  font-family:FrutigerCE-Bold;
+  font-size:11px;
+  color:#000000;
+  text-align:left;
+  margin-bottom: 5px;
+}
+
+/* text input */
+.container-right form div.form-group.text-inputs input{
+  display: inline-block;
+  background:#ffffff;
+  margin-bottom:30px;
+  border:1px solid #d0d0d0;
+  border-radius:3px;
+  width:98px;
+  height:43px;
+}
+
+/* text input placeholder */
+.container-right form div.form-group.text-inputs input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  opacity:0.16;
+  font-family:FrutigerCE-Regular;
+  font-size:15px;
+  color:#000000;
+  text-align:left;
+}
+.container-right form div.form-group.text-inputs input::-moz-placeholder { /* Firefox 19+ */
+  opacity:0.16;
+  font-family:FrutigerCE-Regular;
+  font-size:15px;
+  color:#000000;
+  text-align:left;
+}
+.container-right form div.form-group.text-inputs input:-ms-input-placeholder { /* IE 10+ */
+  opacity:0.16;
+  font-family:FrutigerCE-Regular;
+  font-size:15px;
+  color:#000000;
+  text-align:left;
+}
+.container-right form div.form-group.text-inputs input:-moz-placeholder { /* Firefox 18- */
+  opacity:0.16;
+  font-family:FrutigerCE-Regular;
+  font-size:15px;
+  color:#000000;
+  text-align:left;
+}
+
+/* big-text-input width:210px */
+
+.big-text-input{
+  width: 210px !important;
+}
+
+/* textarea and the label */
+
+.textarea-container{
+  vertical-align: top;
+}
+
+.textarea-container label{
+  opacity:0.4;
+  font-family:FrutigerCE-Regular;
+  font-size:15px;
+  color:#231f20;
+  text-align:left;
+  margin-right: 25px;
+}
+
+.textareainput{
+  display: inline-block;
+  vertical-align: top;
+  background:#ffffff;
+  border:1px solid #dfdfdf;
+  border-radius:4px;
+  width:201px;
+  height:79px;
+  font-family:FrutigerCE-Regular;
+  font-size:11px;
+  color:#242424;
+  line-height:14px;
+  text-align:left;
+}
+
+/* textarea placehodler */
+
+.textareainput::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family:FrutigerCE-Regular;
+  font-size:11px;
+  color:#242424;
+  line-height:14px;
+  text-align:left;
+}
+
+.textareainput::-moz-placeholder { /* Firefox 19+ */
+  font-family:FrutigerCE-Regular;
+  font-size:11px;
+  color:#242424;
+  line-height:14px;
+  text-align:left;
+}
+
+.textareainput:-ms-input-placeholder { /* IE 10+ */
+  font-family:FrutigerCE-Regular;
+  font-size:11px;
+  color:#242424;
+  line-height:14px;
+  text-align:left;
+}
+
+.textareainput:-moz-placeholder { /* Firefox 18- */
+  font-family:FrutigerCE-Regular;
+  font-size:11px;
+  color:#242424;
+  line-height:14px;
+  text-align:left;
+}
+
+/* info class */
+
+.info{
+  margin-top: 5px;
+}
+
+.info a{
+  display: inline-block;
+  font-family:FrutigerCE-BlackItalic;
+  font-size:13px;
+  color:#ffffff;
+  text-align:center;
+  text-decoration: none;
+  background:#1b7577;
+  padding-top: 1px;
+  width:22px;
+  height:22px;
+  border-radius:100%;
+  margin-left: 8px;
+}
+
+.info a:hover, .info a:focus{
+  text-decoration: none;
+}
+
+/* container-left */
+
+.container-left{
+  float: left;
+  min-width: 240px;
+}
+
+/* same size selects */
+
+.same-size-select{
+  margin-bottom: 28px;
+}
+
+.same-size-select select{
+  display: inline-block;
+  background:#ffffff;
+  padding: .5rem 3px;
+  border:1px solid #d0d0d0;
+  border-radius:3px;
+  margin-right: 12px;
+  max-width:200px;
+  height:43px;
+  font-family:FrutigerCE-Regular;
+  font-size:15px;
+  color:#231f20;
+  text-align:left;
+}
+
+.same-size-select select option{
+
+}
+
+/* submit button */
+.button-container{
+  text-align: center;
+}
+
+.submit-button{
+  background:#c05000;
+  border-radius:3px;
+  width:200px;
+  height:45px;
+  border:0;
+  font-family:FrutigerCE-Bold;
+  font-size:15px;
+  color:#ffffff;
+  text-align:center;
+}
+
+/* ez nyilván igény szerint cserélhető */
+.submit-button:hover{
+  background:#c05000;
+}
+
+/* first-box */
+
+.first-box{
+  margin-bottom: 19px;
+}
+
+.first-box ul{
+  padding-left: 0;
+  margin-bottom: 0;
+  background:#f6f6f6;
+}
+
+.first-box ul li{
+  list-style: none;
+}
+
+.first-box ul li a{
+  display: inline-block;
+  min-width: 240px;
+  height: 51px;
+  font-family:FrutigerCE-Bold;
+  font-size:15px;
+  color:rgba(5,5,5,0.80);
+  text-align:left;
+}
+
+.first-box ul li a:hover, .first-box ul li a:focus{
+  text-decoration: none;
+}
+
+.first-box ul li a img{
+  display: inline-block;
+  min-width: 24px;
+  height: 21px;
+  margin:13px 18px 16px;
+}
+
+/* first-box ul active li*/
+
+.first-box ul li.active a{
+  background:#007b7b;
+}
+
+.first-box ul li.active a span{
+  font-family:FrutigerCE-Bold;
+  font-size:15px;
+  color:#ffffff;
+  text-align:left;
+}
+
+.first-box ul li.active a img{
+    -webkit-filter: invert(100%);
+}
+
+/* second-box */
+
+.second-box{
+  margin-bottom: 19px;
+}
+
+.second-box ul li a.dropdown-toggle{
+  background:#91bd00;
+  min-width:240px;
+  height:50px;
+  font-family:FrutigerCE-Bold;
+  font-size:15px;
+  color:#ffffff;
+  text-align:left;
+  padding-top: 14px;
+}
+
+.second-box ul li div.dropdown-menu{
+  background:#f6f6f6;
+  min-width:240px;
+  padding-top:26px;
+  padding-left: 19px;
+  padding-bottom: 36px;
+  border:0;
+  margin:0;
+}
+
+/* select */
+
+.second-box ul li div.dropdown-menu form div.form-group label{
+  font-family:FrutigerCE-Bold;
+  font-size:15px;
+  color:#333333;
+  text-align:left;
+  margin:12px 0 11px;
+}
+
+.second-box ul li div.dropdown-menu form div.form-group select{
+  background:#ffffff;
+  padding: .5rem 3px;
+  border:1px solid #d0d0d0;
+  border-radius:3px;
+  max-width:198px;
+  height:43px;
+}
+
+.second-box ul li div.dropdown-menu form div.form-group select option{
+
+}
+
+
+/* check-box */
+
+.second-box ul li div.dropdown-menu form div.form-check label.form-check-label{
+  font-family:FrutigerCE-Regular;
+  font-size:15px;
+  color:#000000;
+  text-align:left;
+  height: 24px;
+  padding-left: 0;
+  margin-top:11px;
+}
+
+.second-box ul li div.dropdown-menu form div.form-check label.form-check-label span{
+  display: inline-block;
+}
+
+/* original checkbox disappear */
+
+.second-box ul li div.dropdown-menu form div.form-check label.form-check-label input[type=checkbox] {
+  display: none;
+}
+
+/* custom checkbox display */
+
+.chekboxForReal{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+  vertical-align: -7px;
+  background-image: url("../imgs/F700208F-9072-4ED5-B89E-3814B0C99A35@1x.png");
+}
+
+/* custom checkbox pipeline */
+
+.chekboxForReal i{
+  color: #ffffff;
+  margin: 5px;
+  display: none;
+}
+
+
+/* text-box */
+
+.second-box ul li div.dropdown-menu form div.text-box{
+  font-family:FrutigerCE-Regular;
+  font-size:15px;
+  color:#231f20;
+  text-align:left;
+  margin-top:22px;
+}
+
+.second-box ul li div.dropdown-menu form div.text-box p:nth-child(1){
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+.second-box ul li div.dropdown-menu form div.text-box p:nth-child(2){
+  font-family:FrutigerCE-Bold;
+  margin:0;
+}

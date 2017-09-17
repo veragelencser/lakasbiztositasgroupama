@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Groupama Lakásbiztosítási kérdőív</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom fonts -->
+    <link href="fonts/" >
+
+    <!-- Font-awesome icons font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles -->
+    <link href="css/lakasbiztositas.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <!-- menü -->
+    <nav>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mentés</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Vissza a portálra</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Újrakezdés</a>
+        </li>
+    </ul>
+    </nav>
+
+    <!-- Tabs  -->
+    <section class="tabs">
+      <!-- felső tabok számokkal -->
+      <ul>
+         <li class="selected"><div><p><i class="fa fa-check"></i></p></div><span>Alapadatok</span></li>
+         <li class="active"><div><p>2</p></div><span>Fedezetek</span></li>
+         <li><div><p>3</p></div><span>Díjkínálat</span></li>
+         <li><div><p>4</p></div><span>Ajánlat</span></li>
+         <li><div><p>5</p></div><span>Nyilatkozatok</span></li>
+         <li><div><p>6</p></div><span>Véglegesítés</span></li>
+         <div class="clear"></div>
+      </ul>
+    </section>
+
+    <!-- Containers -->
+    <section class="containers">
+      <!-- Container right -->
+      <div class="container-right">
+        <!-- az ingatlanról röviden blokk -->
+        <a href="#ingatlan"><h4>Az ingatlanról röviden</h4></a>
+        <form>
+          <!-- nagy és kis címkés radiobuttonok -->
+          <div class="form-group">
+            <p>Mire kötünk biztosítást?</p>
+            <!-- nagyméretű címkés radiobutton active osztállyal, ami adja a kijelölt tulajdonságokat, pl a gombot is -->
+            <label class="form-check-label big-label active">
+              <div class="radiobuttonForReal">
+                <img src="imgs/84C966D7-CCC2-4509-807C-75B1F53A7349@1x.png" alt="">
+              </div>
+              <!-- kis címkés radiobutton -->
+              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
+              <span>Épület és ingóság</span>
+            </label>
+            <label class="form-check-label">
+              <!-- radiobuttonForReal osztály adja a custom css-t a címkékhez, az eredeti radio nem látszik -->
+              <div class="radiobuttonForReal">
+                <img src="imgs/84C966D7-CCC2-4509-807C-75B1F53A7349@1x.png" alt="">
+              </div>
+              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+              <span>Épület</span>
+            </label>
+            <label class="form-check-label">
+              <div class="radiobuttonForReal">
+                <img src="imgs/84C966D7-CCC2-4509-807C-75B1F53A7349@1x.png" alt="">
+              </div>
+              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+              <span>Ingóság</span>
+            </label>
+          </div>
+          <!-- beíró mezők példa -->
+          <div class="form-group text-inputs">
+            <p>Hol található az ingatlan?</p>
+            <div>
+              <label for="exampleInput">Irányítószám</label><br>
+              <input type="text" class="form-control" id="exampleInput" placeholder="Ir. szám" />
+            </div>
+            <!-- nagy beíró mező -->
+            <div>
+              <label for="exampleInput">Település</label><br>
+              <input type="text" class="form-control big-text-input" id="exampleBigText" placeholder="Település" />
+            </div>
+          </div>
+          <div class="form-group text-inputs">
+            <p>Hány négyzetméteres?</p>
+            <div>
+              <input type="text" class="form-control" id="exampleInput" placeholder="m2" />
+            </div>
+            <!-- textarea elem -->
+            <div class="textarea-container">
+              <label for="exampleInput">m2</label>
+              <textarea class="form-control textareainput" id="exampleTextarea" rows="3"></textarea>
+            </div>
+            <!-- kis infó link, gondolom, ehhez majd csináltok egy felugrót, ami a hoverje lesz -->
+            <p class="info">Hogy jellemzi az otthonát?<a href="">i</a></p>
+          </div>
+          <!-- egységméretű select same-size-select -->
+          <div class="form-group same-size-select">
+            <select class="form-control" id="exampleSelect1">
+              <option>Első emelet</option>
+              <option>Magasföldszint</option>
+            </select>
+          </div>
+          <!-- nagy narancssárga gomb -->
+          <div class="button-container">
+            <button type="submit" class="btn btn-primary submit-button">Lássuk a fedezeteket</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Container left -->
+      <!-- a bal oldali oszlop, ami tartalmazza a lenyíló mezőket -->
+      <div class="container-left">
+        <!-- First box -->
+        <div class="first-box">
+          <ul>
+            <li class="active"><a id="#ingatlan" href=""><img src="imgs/ABFEBB34-D7EC-4055-B0C7-66607FD0FE9E@1x.png" alt=""><span>Az ingatlanról röviden</span></a></li>
+            <li><a href=""><img src="imgs/E0806FF9-2325-492F-8DDE-F4CE30568947@1x.png" alt=""><span>Szerkezet</span></a></li>
+          </ul>
+        </div>
+        <!-- Second box Biztosítottsági szint -->
+        <div class="second-box">
+          <ul class="nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Biztosítottsági szint</a>
+            <div class="dropdown-menu">
+            </div>
+          </li>
+        </ul>
+        </div>
+        <!-- Second box Díj részletek -->
+        <div class="second-box">
+          <ul class="nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Díj részletek</a>
+            <div class="dropdown-menu">
+              <form>
+                  <!-- Select -->
+                  <div class="form-group">
+                    <label for="exampleSelect1">Díjfizetési mód</label>
+                    <select class="form-control" id="exampleSelect1">
+                    <option>Lehívás</option>
+                    <option>Lehívás2</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleSelect1">Díjfizetési gyakoriság</label>
+                    <select class="form-control" id="exampleSelect1">
+                    <option>Negyedéves</option>
+                    <option>Negyedéves2</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleSelect1">Partner kedvezmény</label>
+                  <select class="form-control" id="exampleSelect1">
+                    <option>Nincs más Groupama…</option>
+                    <option>Nincs más Groupama…2</option>
+                  </select>
+                </div>
+                <!-- Checkbox -->
+                <!-- checkbox eredetije eltüntetve, css változása kattintással jQuery-vel megoldva, csak beraktam oda alulra -->
+                <div class="form-check">
+                <label id="checkbox-label" class="form-check-label">
+                  <div class="chekboxForReal">
+                    <i class="fa fa-check"></i>
+                  </div>
+                  <input type="checkbox" id="checkboxKedvezmeny" name="checkboxKedvezmeny" class="form-check-input">
+                  <span>Hűség kedvezmény</span>
+                </label>
+              </div>
+              <div class="text-box">
+                <p>Gyakoriság szerinti díj:</p>
+                <p>2.985 Ft</p>
+              </div>
+              </form>
+            </div>
+          </li>
+        </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </section>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- ez a clickeventje a custom checkboxnak - egyszerűen megváltoztatom a div színét és láthatóvá válik a pipa is -->
+    <script type="text/javascript">
+
+        $(document).ready(function (){
+            $("#checkbox-label").click(function(){
+              if($("#checkboxKedvezmeny").prop("checked")){
+                $(".chekboxForReal").css('background-image', 'url(' + 'imgs/F700208F-9072-4ED5-B89E-3814B0C99A35@1x.png' + ')');
+                $(".chekboxForReal i").css('display', 'none');
+                $("#checkboxKedvezmeny").prop( "checked", false);
+              } else {
+                $(".chekboxForReal").css('background-image', 'url(' + 'imgs/89B0877D-2684-4666-922D-CDC55461B548@1x.png' + ')');
+                $(".chekboxForReal").css('vertical-align', 'middle');
+                $(".chekboxForReal i").css('display', 'inline-block');
+                $("#checkboxKedvezmeny").prop( "checked", true);
+              }
+            });
+        });       
+
+    </script>
+  </body>
+
+</html>
