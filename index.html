@@ -66,10 +66,10 @@
         <!-- First box -->
         <div class="first-box">
           <ul>
-            <a id="#ingatlan" href="">
+            <a id="#ingatlan" href="" data-toggle="tooltip" title="Some tooltip text!">
               <li class="active"><img src="imgs/ABFEBB34-D7EC-4055-B0C7-66607FD0FE9E@1x.png" alt=""><span>Az ingatlanról röviden</span></li></a>
 
-            <a id="#szerkezet" href="">
+            <a id="#szerkezet" href="" data-toggle="tooltip" title="Some tooltip text!">
             <li><img src="imgs/E0806FF9-2325-492F-8DDE-F4CE30568947@1x.png" alt=""><span>Szerkezet</span></li></a>
           </ul>
         </div>
@@ -77,7 +77,7 @@
 
         <div class="second-box">
 
-          <button data-toggle="collapse" class="mycolllapse" data-target="#bizt_szint">Biztosítási szint</button>
+          <button data-toggle="collapse" class="mycolllapse collapsed" data-target="#bizt_szint">Biztosítási szint</button>
 
           <div id="bizt_szint" class="collapse bizt">
             <form>
@@ -128,55 +128,51 @@
     </div>
 
     <div class="right">
-      <div class="padding-left">
-        <div class="padding-inside">
-          <h1>Az ingatlanról röviden</h1>
-          <form>
-            <!-- nagy és kis címkés radiobuttonok -->
-            <div class="form-group">
-              <h2>Mire kötünk biztosítást?</h2>
-              <!-- nagyméretű címkés radiobutton active osztállyal, ami adja a kijelölt tulajdonságokat, pl a gombot is -->
-              <label class="form-check-label big-label active">
-                <div class="radiobuttonForReal">
-                  <img src="imgs/84C966D7-CCC2-4509-807C-75B1F53A7349@1x.png" alt="">
-                </div>
-                <!-- kis címkés radiobutton -->
-                <input type="radio" class="form-check-input" name="optionsRadios"  value="option1">
-                <span>Épület és ingóság</span>
-              </label>
-              <label class="form-check-label">
-                <!-- radiobuttonForReal osztály adja a custom css-t a címkékhez, az eredeti radio nem látszik -->
-                <div class="radiobuttonForReal">
-                  <img src="imgs/84C966D7-CCC2-4509-807C-75B1F53A7349@1x.png" alt="">
-                </div>
-                <input type="radio" class="form-check-input" name="optionsRadios" value="option2">
-                <span>Épület</span>
-              </label>
-              <label class="form-check-label">
-                <div class="radiobuttonForReal">
-                  <img src="imgs/84C966D7-CCC2-4509-807C-75B1F53A7349@1x.png" alt="">
-                </div>
-                <input type="radio" class="form-check-input" name="optionsRadios"  value="option3">
-                <span>Ingóság</span>
-              </label>
+      <h1>Az ingatlanról röviden</h1>
+      <form>
+      <!-- nagy és kis címkés radiobuttonok -->
+        <div class="form-group">
+          <h2>Mire kötünk biztosítást?</h2>
+            <!-- nagyméretű címkés radiobutton active osztállyal, ami adja a kijelölt tulajdonságokat, pl a gombot is -->
+          <label class="form-check-label big-label active">
+            <div class="radiobuttonForReal">
+              <img src="imgs/84C966D7-CCC2-4509-807C-75B1F53A7349@1x.png" alt="">
             </div>
-            <!-- beíró mezők példa -->
-            <div class="form-group text-inputs">
-              <h2>Hol található az ingatlan?<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Lorem ipsum">i</button></h2>
-              <div class="input-holder inline ">
-                <label>Irányítószám</label><br>
-                <input type="text" class="form-control smallinput" placeholder="Ir. szám" />
-              </div>
-              <!-- nagy beíró mező -->
-              <div class="input-holder inline">
-                <label for="exampleInput">Település</label><br>
-                <input type="text" class="form-control big-text-input" placeholder="Település" />
-              </div>
+            <!-- kis címkés radiobutton -->
+            <input type="radio" class="form-check-input" name="optionsRadios"  value="option1">
+              <span>Épület és ingóság</span>
+          </label>
+          <label class="form-check-label">
+          <!-- radiobuttonForReal osztály adja a custom css-t a címkékhez, az eredeti radio nem látszik -->
+            <div class="radiobuttonForReal">
+              <img src="imgs/84C966D7-CCC2-4509-807C-75B1F53A7349@1x.png" alt="">
             </div>
-            <!-- egységméretű select same-size-select -->
-
-
-          </form>
+            <input type="radio" class="form-check-input" name="optionsRadios" value="option2">
+            <span>Épület</span>
+          </label>
+          <label class="form-check-label">
+            <div class="radiobuttonForReal">
+              <img src="imgs/84C966D7-CCC2-4509-807C-75B1F53A7349@1x.png" alt="">
+            </div>
+            <input type="radio" class="form-check-input" name="optionsRadios"  value="option3">
+            <span>Ingóság</span>
+          </label>
+        </div>
+        <!-- beíró mezők példa -->
+        <div class="form-group text-inputs">
+          <h2>Hol található az ingatlan?<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Lorem ipsum">i</button></h2>
+          <div class="input-holder inline ">
+            <label>Irányítószám</label><br>
+            <input type="number" class="form-control smallinput" placeholder="Ir. szám" />
+          </div>
+          <!-- nagy beíró mező -->
+          <div class="input-holder inline">
+            <label for="exampleInput">Település</label><br>
+            <input type="text" class="form-control big-text-input" placeholder="Település" />
+          </div>
+        </div>
+        <!-- egységméretű select same-size-select -->
+      </form>
 
           <!--  -->
           <h1>Szükséges fedezetek</h1>
@@ -185,10 +181,10 @@
               <div class="col-md-6">
                 <div class="nagy">
                   <div class="box-header">
-                    <img src="imgs/4EF0D241-6F6F-4E0D-A3E1-B8C360F883BB@1x.png" alt="">
+                    <a href="#" data-toggle="tooltip" title="Some tooltip text!"><img src="imgs/lakastuz.png" alt=""></a>
                     <p>Tűz és elemi károk</p>
                   </div>
-                  <button class="btn btn-primary mycolllapse" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                  <button class="btn btn-primary mycolllapse collapsed" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
                     Biztosítási fedezet másoknak okozott kár esetén
                   </button>
                   <div class="collapse" id="collapseExample1">
@@ -210,10 +206,10 @@
               <div class="col-md-6">
                 <div class="nagy">
                   <div class="box-header">
-                    <img src="imgs/4EF0D241-6F6F-4E0D-A3E1-B8C360F883BB@1x.png" alt="">
-                    <p>Tűz és elemi károk</p>
+                    <a href="#" data-toggle="tooltip" title="Some tooltip text!"><img src="imgs/D0A366EA-E816-48EA-A7A5-D66244476E53@1x.png" alt=""></a>
+                    <p>Lopás és rablás</p>
                   </div>
-                  <button class="btn btn-primary mycolllapse" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                  <button class="btn btn-primary mycolllapse collapsed" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
                     Biztosítási fedezet másoknak okozott kár esetén
                   </button>
                   <div class="collapse" id="collapseExample2">
@@ -239,9 +235,9 @@
                 <div class="kozepes">
                   <div class="box-header">
                     <div class="image-container">
-                      <img src="imgs/DBAEE00F-9BE5-4062-94B2-4EC1E2F544CF@1x.png" alt="">
+                      <a href="#" data-toggle="tooltip" title="Some tooltip text!"><img src="imgs/DBAEE00F-9BE5-4062-94B2-4EC1E2F544CF@1x.png" alt="">
                       <img src="imgs/000A4C08-1D7A-4503-84E8-5612AE31BBF2@1x.png" alt="">
-                      <img src="imgs/918D2559-CC2A-4012-9B09-F417E0660D66@1x.png" alt="">
+                      <img src="imgs/918D2559-CC2A-4012-9B09-F417E0660D66@1x.png" alt=""></a>
                     </div>
                     <p>Magánemberi felelősség</p>
                     <form>
@@ -253,7 +249,7 @@
                       </div>
                     </form>
                   </div>
-                  <p>Betörés vagy besurranás esetén az asztalon hagyott készpénz térítése. Betörés vagy besurranás esetén az asztalon.</p>
+                  <div class="box-body">Betörés vagy besurranás esetén az asztalon hagyott készpénz térítése. Betörés vagy besurranás esetén az asztalon.</div>
                   <div class="box-footer">
                     <form>
                       <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value"><span>-</span></div>
@@ -270,7 +266,7 @@
               <div class="col-md-3">
                 <div class="kicsi">
                   <div class="box-header">
-                    <img src="imgs/korlatvizzel.png" alt="">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Some tooltip text!"><img src="imgs/korlatvizzel.png" alt=""></a>
                     <p>Ebtartói felelősség</p>
                   </div>
                   <button class="btn btn-primary" type="button">
@@ -281,7 +277,7 @@
               <div class="col-md-3">
                 <div class="kicsi">
                   <div class="box-header">
-                    <img src="imgs/korlatvizzel.png" alt="">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Some tooltip text!"><img src="imgs/korlatvizzel.png" alt=""></a>
                     <p>Medence</p>
                   </div>
                   <button class="btn btn-primary active" type="button">
@@ -292,7 +288,7 @@
               <div class="col-md-3">
                 <div class="kicsi">
                   <div class="box-header">
-                    <img src="imgs/korlatvizzel.png" alt="">
+                    <a href="#" data-toggle="tooltip" title="Some tooltip text!"><img src="imgs/korlatvizzel.png" alt=""></a>
                     <p>Ebtartói felelősség</p>
                   </div>
                   <button class="btn btn-primary" type="button">
@@ -303,7 +299,7 @@
               <div class="col-md-3">
                 <div class="kicsi">
                   <div class="box-header">
-                    <img src="imgs/korlatvizzel.png" alt="">
+                    <a href="#" data-toggle="tooltip" data-placement="top" title="Some tooltip text!"><img src="imgs/korlatvizzel.png" alt=""></a>
                     <p>Medence</p>
                   </div>
                   <button class="btn btn-primary active" type="button">
@@ -312,10 +308,9 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
       </div>
     </div>
+    <div class="clear"></div>
   </section>
 
 
@@ -332,6 +327,9 @@
     $.noConflict();
     jQuery( document ).ready(function( $ ) {
       $(document).ready(function (){
+        
+        $('[data-toggle="tooltip"]').tooltip();
+
                   $("#checkbox-label").click(function(){
                     if($("#checkboxKedvezmeny").prop("checked")){
                       $(".chekboxForReal").css('background-image', 'url(' + 'imgs/F700208F-9072-4ED5-B89E-3814B0C99A35@1x.png' + ')');

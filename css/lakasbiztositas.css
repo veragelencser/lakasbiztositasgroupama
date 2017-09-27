@@ -133,10 +133,21 @@ label {
 
   text-align: left;
   margin-bottom: 5px;
+  cursor:pointer
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 
 h1:nth-child(1){
   margin-top: 0;
+}
+
+button{
+  cursor:pointer;
 }
 
 
@@ -312,19 +323,11 @@ nav ul li a {
 }
 
 .right {
-  width: 80%;
+  max-width: 80%;
   float: right;
-}
-
-.right .padding-left {
-  padding-left: 20px;
-}
-
-.right .padding-left .padding-inside {
-  padding: 30px 25px 30px;
   background: var(--light-grey);
+  padding:30px;
 }
-
 
 
 
@@ -436,6 +439,7 @@ label.form-check-label.active .radiobuttonForReal img{
 }
 .left .first-box a {
   text-decoration: none;
+  cursor:pointer
 }
 .left .first-box a li span {
   margin-left: 45px;
@@ -625,10 +629,7 @@ button.btn-secondary{
   min-height: 81px;
 }
 
-.nagy:first-child .box-header img{
-  background: url(../imgs/6D026413-4668-42FE-9E27-D3AE89926505@2x.png);
-  background-size: cover;
-  background-size: 29px 29px;
+.col-md-6:nth-child(1) .box-header:nth-child(1) img{
   padding: .25rem;
 }
 
@@ -786,8 +787,8 @@ button.btn-secondary{
     border-radius: 50%;
   }
 
-    .kozepes p{
-      font-size: .82rem;
+    .box-body{
+      font-size: .82em;
       line-height: 1.5em;
       margin:0 16px 0 13px;
     }
@@ -798,7 +799,7 @@ button.btn-secondary{
   text-align: center;
   background: var(--lightergrey);
   height: 45px;
-  margin-top: 18px;
+  margin-top: 20px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
